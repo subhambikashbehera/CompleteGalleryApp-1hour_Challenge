@@ -62,8 +62,14 @@ class MainActivity : AppCompatActivity() {
                     booleanFolder = true
                     position = i
                     break
-                } else {
-                    booleanFolder = false
+                }else{
+                     if (folderList[i].folderName == "root") {
+                        booleanFolder = true
+                        position = i
+                        break
+                    }else{
+                         booleanFolder = false
+                     }
                 }
             }
 
@@ -75,7 +81,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val imagePath: ArrayList<String> = ArrayList()
                 imagePath.add(absolutePathOfImage)
-                folderList.add(FolderModel(folderName,imagePath))
+                folderList.add(FolderModel(folderName?:"root",imagePath))
             }
 
         }

@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="8dp"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="4dp"
     android:elevation="8dp"
     >
     <RelativeLayout
@@ -18,7 +18,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_background" />
         <TextView
-            style="@style/TextAppearance.AppCompat.Title"
+            android:singleLine="true"
             android:textAlignment="center"
             android:text="FolderName"
             android:layout_marginTop="10dp"
